@@ -4,8 +4,6 @@ import RotatingTextAccent from "@/components/RotatingTextAccent"
 import Footer from "@/components/Footer"
 import HeroTextOverlay from "@/components/HeroTextOverlay"
 
-const CDN_BASE = "https://cdn.poehali.dev/templates/meet-jack"
-
 const Index = () => {
   return (
     <div className="w-full min-h-screen py-0 bg-background">
@@ -41,33 +39,34 @@ const Index = () => {
           </div>
 
           <div className="px-6 md:px-40">
-            <div className="flex items-center justify-center mb-3.5 md:gap-11">
-              <div className="flex flex-col items-center">
-                <img src={`${CDN_BASE}/jack-front.png`} alt="Макс спереди" className="w-48 h-48 md:w-56 md:h-56 object-contain" />
-              </div>
-
-              <div className="flex flex-col items-center">
-                <img src={`${CDN_BASE}/jack-side.png`} alt="Макс сбоку" className="w-48 h-48 md:w-56 md:h-56 object-contain" />
-              </div>
-
-              <div className="flex flex-col items-center">
-                <img src={`${CDN_BASE}/jack-back.png`} alt="Макс сзади" className="w-48 h-48 md:w-56 md:h-56 object-contain" />
+            <div className="flex items-center justify-center mb-8 md:gap-11">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-48 h-48 md:w-56 md:h-56 bg-card border border-border rounded-2xl flex items-center justify-center">
+                  <span className="text-8xl">🧟</span>
+                </div>
+                <span className="text-accent font-mono text-xs">Маскот команды</span>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 max-w-5xl">
+            <div className="flex flex-col gap-3 max-w-5xl">
               <div className="flex items-center gap-4">
-                <span className="text-accent font-mono text-sm">Имя</span>
-                <span className="text-foreground font-mono text-sm">Макс</span>
+                <span className="text-accent font-mono text-sm">Команда</span>
+                <span className="text-foreground font-mono text-sm">Miten</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-accent font-mono text-sm">Вид</span>
-                <span className="text-foreground font-mono text-sm">Инопланетянин с планеты Флэпджек</span>
+                <span className="text-accent font-mono text-sm">Продукт</span>
+                <span className="text-foreground font-mono text-sm">Майнкрафт хостинг</span>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-accent font-mono text-sm">Характер</span>
+                <span className="text-accent font-mono text-sm">Маскот</span>
                 <span className="text-foreground font-mono text-sm">
-                  Любопытный, гибкий, немного расслабленный - но острый, когда дело касается баз данных и организации информации.
+                  Зомби из Майнкрафта — бесстрашный, надёжный и всегда онлайн. Как и наши серверы.
+                </span>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="text-accent font-mono text-sm">Миссия</span>
+                <span className="text-foreground font-mono text-sm">
+                  Дать каждому игроку свой уголок в Майнкрафте — быстро, доступно и без лагов.
                 </span>
               </div>
             </div>
